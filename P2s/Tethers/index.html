@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This is where your description goes">
+		<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<p>Click "Random" to generate a new pattern and markers.
+		 Input player positions based on map and their marker.
+		Click "Solve" to check if you are successful.</p>
+		<button id="setMechanic">Random</button>
+		<section class="main">
+			<section class="arena">
+				<section class="elements top-left-section">
+					<div class="hideElement dangerZone  pattern-1 pattern-2"></div>
+					<img class="hideElement boss pattern-4 pattern-7" src="img/HippoBossSmall.png" alt="">
+				</section>
+				<section class="elements top-right-section">
+					<div class="hideElement dangerZone pattern-3 pattern-4"></div>
+					<img class="hideElement boss pattern-1 pattern-6" src="img/HippoBossSmall.png" alt="">
+				</section>
+				<section class="elements bot-left-section">
+					<div class="hideElement dangerZone pattern-7 pattern-8"></div>
+					<img class="hideElement boss pattern-2 pattern-5" src="img/HippoBossSmall.png" alt="">
+				</section>
+				<section class="elements bot-right-section">
+					<div class="hideElement dangerZone pattern-5 pattern-6"></div>
+					<img class="hideElement boss pattern-3 pattern-8" src="img/HippoBossSmall.png" alt="">
+				</section>
+			</section>
+			<section class="inputs">
+				<form id="form" action="">
+					<label for="player-1">WAR : </label><span id="player-1-marker"></span>
+					<input required class="players" id="player-1" type="text">
+
+					<label for="player-2">PLD : </label><span id="player-2-marker"></span>
+					<input required class="players" id="player-2" type="text">
+
+					<label for="player-3">SGE : </label><span id="player-3-marker"></span>
+					<input required class="players" id="player-3" type="text">
+
+					<label for="player-4">AST : </label><span id="player-4-marker"></span>
+					<input required class="players" id="player-4" type="text">
+
+					<label for="player-5">SAM : </label><span id="player-5-marker"></span>
+					<input required class="players" id="player-5" type="text">
+
+					<label for="player-6">NIN : </label><span id="player-6-marker"></span>
+					<input required class="players" id="player-6" type="text">
+
+					<label for="player-7">MCH : </label><span id="player-7-marker"></span>
+					<input required class="players" id="player-7" type="text">
+
+					<label for="player-8">SMN : </label><span id="player-8-marker"></span>
+					<input required class="players" id="player-8" type="text">
+
+					<button id="solveMechanic">Solve</button>
+				</form>
+			</section>
+		</section>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

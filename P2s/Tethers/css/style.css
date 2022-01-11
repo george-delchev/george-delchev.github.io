@@ -1,0 +1,90 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.main{
+  display: flex;
+}
+.arena{
+  position: relative;
+  display: flex;
+  flex-grow: 2;
+  min-width: 905px;
+  min-height: 1047px;
+  margin: 5%;
+  background-image: url("../img/p2s.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.inputs{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.inputs input{
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 10%;
+}
+#setMechanic{
+  display: block;
+  margin: 5% 0 0 5%;
+}
+p{
+  padding: 5% 0 0 5%;
+  font-size: 2rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.boss{ 
+  display: block;
+  width:144px;
+  height: 180px;
+  margin: 0 auto;
+}
+.top-left-section{
+  position: absolute;
+  top: 245px;
+  left: 160px;
+}
+.top-right-section{
+  position: absolute;
+  top: 245px;
+  right: 150px;
+}
+.bot-left-section{
+  position: absolute;
+  bottom: 245px;
+  left: 160px;
+}
+.bot-right-section{
+  position: absolute;
+  bottom: 245px;
+  right: 150px;
+} 
+.elements{
+  width: 190px;
+  height: 180px;
+}
+.dangerZone{
+  position: absolute;
+  width: 190px;
+  height: 180px;
+  background: rgb(255,0,0, 80%)
+}
+
+.hideElement{
+ display: none; 
+}
